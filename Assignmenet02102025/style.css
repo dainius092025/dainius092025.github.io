@@ -1,0 +1,123 @@
+/* GLOBAL */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
+}
+
+.page-titel{
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  text-align: flex-end;
+  padding: 2px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 9rem;
+  flex-direction: column;
+}
+
+/*.main SECTION */
+.main-header {
+  height: 100vh;
+  background: url('earthplanet.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+p {
+  color: yellow;
+  font-size: 1.5rem;
+  max-width: 600px;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+
+h2{
+  font-family: 'Oswald', sans-serif;
+  margin: 20px 0 10px;
+}
+
+h3{
+  text-align: start;
+  font-family: 'Oswald', sans-serif;
+  margin: 10px 0 10px;
+}
+/* PLANET GRID */
+.planet-row {
+  display: flex;
+  justify-content: center;
+  gap: 25 px;
+  margin: 10px 0 40px;
+}
+
+.planet-row img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+ 
+}
+
+.planet-row img:hover {
+  transform: scale(1.2);
+}
+
+/* PLANET SECTIONS */
+.planet-section {
+  /*min-height: 100vh;*/
+  object-fit: cover;
+  height: 45rem;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  font-size: 3rem;
+  font-weight: italic;
+  color: white;
+  text-shadow: 0px 0px 15px black;
+
+}
+
+/* Planet backgrounds but supposed to be only half */
+#mercury {
+  background: url('mercury.png') no-repeat left;
+}
+#venus {
+  background: url('venus.png') no-repeat left;
+}
+#earth {
+  background: url('earth.png') no-repeat left;
+}
+#mars {
+  background: url('mars.png') no-repeat left;
+}
+#jupiter {
+  background: url('jupiter.png') no-repeat left;
+}
+#saturn {
+  background: url('saturn.png') no-repeat left;
+}
+#uranus {
+  background: url('uranus.png') no-repeat left;
+}
+#neptune {
+  background: url('neptune.png') no-repeat left;
+}
+
+/* footer */
+footer {
+  background: #111;
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+  color: #aaa;
+}
